@@ -42,7 +42,12 @@
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
 
-
+TakeMeter classifies beauty-product posts from the Sephora Beauty Insider
+Community. The dataset focuses on three distinctions: specific outcomes from
+using a product (`results_based`), product characteristics such as texture or
+scent (`product_details`), and general approval or disapproval without
+supporting specifics (`general_opinion`). The goal is to test whether these
+categories can be applied consistently and learned by a text classifier.
 
 ---
 
@@ -54,35 +59,51 @@
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+### `results_based`
 
-**Definition:**
+**Definition:** Reviews describing specific outcomes from using a beauty
+product, including benefits or adverse effects.
 
-**Example 1:**
->
+**Example 1:** “Within just a few days of using this lip mask my dry lips from
+the cold dry winter feel so much better.”
 
-**Example 2:**
->
+**Example 2:** “Both times it dried out my lips badly that it took a week to
+get better.”
 
-### `label_two`
+### `product_details`
 
-**Definition:**
+**Definition:** Reviews focused on product characteristics such as texture,
+scent, ingredients, packaging, or application.
 
-**Example 1:**
->
+**Example 1:** “not sticky, looks like gloss but feels like a lip balm or
+butter. I hate sticky lip products and i love this. looks very pretty too.”
 
-**Example 2:**
->
+**Example 2:** “this product is a bit pricey but after using one scoop i
+figured this will take a LONG time to use up the whole container. it smells so
+good and the container is so cute.”
+
+### `general_opinion`
+
+**Definition:** Reviews expressing approval or disapproval without specific
+supporting details about outcomes or product characteristics.
+
+**Example 1:** “love her! as a sleeping mask, i don’t think you could ask for
+anything better”
+
+**Example 2:** “I heard amazing things about this so I got it and it was
+amazing!”
 
 ### The hardest boundary
 
-**Which two labels:**
+**Which two labels:** `results_based` and `product_details`
 
 **The decision rule I used every time:**
-<!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
-     if the tone is heated." -->
-
-
+If the main point is a specific effect the reviewer experienced after using
+the product, label it `results_based`, even if the review also mentions scent
+or texture. If the main point is how the product smells, feels, looks, is
+packaged, or is applied, without a specific outcome being the focus, label it
+`product_details`. Use `general_opinion` only when neither kind of supporting
+detail is given.
 
 ---
 
@@ -91,18 +112,21 @@
 <!-- Where you collected from, how you labelled, your counts, and three hard
      cases. -->
 
-**Where the posts came from:**
+**Where the posts came from:** Sephora Beauty Insider Community, as reported
+by the student. Verify the collection source before submission.
 
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
+**How I labelled them:** The student supplied labels for rows 1–20. Rows
+21–200 were pre-labelled with AI and have not yet been reviewed or corrected
+by the student. The first 20 are not marked as cold because unaided labeling
+was not confirmed.
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| `results_based` | 136 | 68% |
+| `product_details` | 44 | 22% |
+| `general_opinion` | 20 | 10% |
 | **Total** |  | 100% |
 
 **Three hard cases**
@@ -173,6 +197,9 @@ of next unit's variance. -->
 - *What I changed:*
 
 **Pre-labelling disclosure:**
+Rows 21–200 in `labels.csv` were pre-labelled by AI and still need to be
+checked and corrected by the student. Rows 1–20 have labels supplied by the
+student; their cold-label status is unverified.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
