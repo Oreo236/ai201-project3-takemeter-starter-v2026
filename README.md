@@ -230,19 +230,27 @@ their cold-label status is unverified.
 
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Overall accuracy | 0.667 | 0.667 | +0.000 |
+| Macro F1 | 0.267 | 0.267 | +0.000 |
+| F1 — `general_opinion` | 0.000 | 0.000 | +0.000 |
+| F1 — `product_details` | 0.000 | 0.000 | +0.000 |
+| F1 — `results_based` | 0.800 | 0.800 | +0.000 |
 
 **What I predicted before I looked:**
-<!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
-     prediction made afterwards isn't one. -->
+Before seeing the baseline results, I expect the zero-shot model to do better
+than the trained model on `product_details` and `general_opinion`, because the
+trained model predicted every test post as `results_based`; I expect the
+trained model may still have higher overall accuracy.
 
 **What the gap actually means:**
-<!-- If the baseline matched your trained model, your fine-tuning added
-     nothing — and that is a real finding, not a failure. Say it plainly. -->
-
+The baseline and trained model produced the same scores on the same 30 held-out
+posts: both predicted every post as `results_based`. Fine-tuning added no
+measurable improvement on this split, and the prediction that the baseline
+would do better on the two smaller labels was not borne out. Only three
+`general_opinion` and seven `product_details` examples were in this test split,
+so their zero F1 scores are based on very small supports. See
+[`baseline_results.json`](baseline_results.json) for the baseline predictions
+and scores.
 
 
 ---

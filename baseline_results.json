@@ -1,0 +1,184 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 30,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 30,
+    "accuracy": 0.6666666666666666,
+    "f1_macro": 0.26666666666666666,
+    "per_label": {
+      "general_opinion": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 3
+      },
+      "product_details": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 7
+      },
+      "results_based": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "support": 20
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "I use this night and morning and LOVE it. This tub lasts SO long too!!",
+      "gold": "product_details",
+      "predicted": "results_based"
+    },
+    {
+      "text": "After using this product for the last two weeks let me just say this\u2026 I brought another one. It applies so smoothly and lasts long and keeps my lips hydrated and moisturized, they got me for life.",
+      "gold": "results_based",
+      "predicted": "results_based"
+    },
+    {
+      "text": "Love this lip masks so much I bought so many other flavours and if you have been thinking about getting it just buy it. It is literally so good. I would literally spend all my money on this. I\u2019m not joking it\u2019s literally amazing. \ufffc",
+      "gold": "general_opinion",
+      "predicted": "results_based"
+    },
+    {
+      "text": "I used this over the course of a couple of nights & it\u2019s basically just a lip balm. Which feels good on my lips\u2026. But it did nothing for me overnight & it wasn\u2019t worth $22 so I\u2019m exchanging it for fenty",
+      "gold": "results_based",
+      "predicted": "results_based"
+    },
+    {
+      "text": "I have this in every colour except for sweet candy which will be my next purchase but I got the kit with the 5 minis for christmas and I honestly love these so much, I wake up and my lips are instantly smooth, I can also use it as a lipgloss and it\u2019s honestly my favourite lip product ever.",
+      "gold": "results_based",
+      "predicted": "results_based"
+    },
+    {
+      "text": "This product is amazing. It really does smell likes gummy bears and leaves the best moisturizing feeling for a period of time. Stays shiny like a gloss",
+      "gold": "product_details",
+      "predicted": "results_based"
+    },
+    {
+      "text": "i\u2019ve had this product for about 3 months now and let me tell you i love it! it makes my lips super soft in the morning. the scent is also amazing. definitely",
+      "gold": "results_based",
+      "predicted": "results_based"
+    },
+    {
+      "text": "I love this product so much I use it day and night. It\u2019s so hydrating and it\u2019s like a lipgloss! \ufffc",
+      "gold": "results_based",
+      "predicted": "results_based"
+    },
+    {
+      "text": "There\u2019s nothing wrong with it but i think it was overhyped on tiktok. It actually made my lips a little dry.",
+      "gold": "results_based",
+      "predicted": "results_based"
+    },
+    {
+      "text": "Really like this product for before bed. It\u2019s super hydrating and doesn\u2019t feel tacky. The scents are great too!",
+      "gold": "results_based",
+      "predicted": "results_based"
+    },
+    {
+      "text": "Truly nourishing and very sexy wet look too. I use it before going out during winter days",
+      "gold": "product_details",
+      "predicted": "results_based"
+    },
+    {
+      "text": "I don\u2019t understand the hype, it\u2019s definitely not work the money. Doesn\u2019t stay on very long and doesn\u2019t make a difference in hydration. The vanilla left a film after use. Only good thing is the smell!",
+      "gold": "results_based",
+      "predicted": "results_based"
+    },
+    {
+      "text": "I had 3 samples of it ( I\u2019m a sephora addict and I made 3 purchases in one day on the site and these were the only products I wanted in the samples of the day). I never really paid attention to this product; I saw the influencer hype and that was all the more reason not to check it out.So, I\u2019m on my second sample (so I\u2019ve been using it for 1 week) and I have to admit that.....wow! The feeling on my lips at night before bed is amazing; my lips are super soft in the morning, and I really don\u2019t need to put on as much lip balm as I used to during the day. I\u2019m the first one to be shocked! I have to admit, as someone who has dry lips all the time and lives in a very cold area, I\u2019ll probably spend the $29 for the full product. I know...but it\u2019s the truth!",
+      "gold": "results_based",
+      "predicted": "results_based"
+    },
+    {
+      "text": "It\u2019s the holy grail of lip hydration. I don\u2019t love the applicator though and feel like it could easily be in a tube instead.",
+      "gold": "product_details",
+      "predicted": "results_based"
+    },
+    {
+      "text": "I use this at night or while I\u2019m putting makeup on. Love the way I don\u2019t have to reapply it during the night. Definitely a win.",
+      "gold": "product_details",
+      "predicted": "results_based"
+    },
+    {
+      "text": "I\u2019ve been using this for over 2 weeks now and it\u2019s sooooo good. keeps my lips baby soft and it smells so nice and sweet too. 10/10 recommend",
+      "gold": "results_based",
+      "predicted": "results_based"
+    },
+    {
+      "text": "I adore this product. It is perfect for any time of the day. I used to wear it only before I went to sleep, and it would make my lips so soft by the morning. Now I also use it as lip gloss during the day. It makes my lips look very glossy and plump, similarly to when I wear the Dior lip oils.",
+      "gold": "results_based",
+      "predicted": "results_based"
+    },
+    {
+      "text": "I really loved this product and did use the whole thing, it lasted over 6 months and I thought did a decent job. The only problem is that I noticed part of my lip started to get super dry and no matter how much I used, how frequently I reapplied, exfoliated my lips, it did not get better. Nothing else in my routine changed except for adding this product in so this did cause my lips to dry out and didn\u2019t fix it. It\u2019s not worth the price, Vaseline works just as good and never dried my lips out.",
+      "gold": "results_based",
+      "predicted": "results_based"
+    },
+    {
+      "text": "I heard amazing things about this so I got it and it was amazing!",
+      "gold": "general_opinion",
+      "predicted": "results_based"
+    },
+    {
+      "text": "Love it!!!! Use it every night and it keeps my lips juicy throughout the whole day even in winter storms #canada. Highly recommend (it tastes great too)",
+      "gold": "results_based",
+      "predicted": "results_based"
+    },
+    {
+      "text": "I have never found a product that helps my lips like this. I\u2019ve been using it for a year now and it is a LIFESAVER. I have tried so many other lip masks (including just plain Vaseline) and nothing compares. Highly highly recommend, lasts for a very long time too.",
+      "gold": "results_based",
+      "predicted": "results_based"
+    },
+    {
+      "text": "It keeps my lips so glossy & hydrated !!! You can use as lip gloss if you want too :)))",
+      "gold": "results_based",
+      "predicted": "results_based"
+    },
+    {
+      "text": "This product is a DEFINITE must for chapped lips! I get really chapped lips when I\u2019m stressed out, especially in the winter and it saved my life!",
+      "gold": "results_based",
+      "predicted": "results_based"
+    },
+    {
+      "text": "I love these! This is my fourth flavor and I love it so much. It leaves my lips looking glossy in the day and hydrated in the night with a sheer pink tint. I love these lip masks!",
+      "gold": "results_based",
+      "predicted": "results_based"
+    },
+    {
+      "text": "Obsessed with this! The first few days I wasn\u2019t seeing ton of results but after using it consistently for a bit my lips are no longer chapped. I don\u2019t have to reapply chapstick throughout the day. My lips also look fuller! Wasn\u2019t excited about the price but a small amount works well.",
+      "gold": "results_based",
+      "predicted": "results_based"
+    },
+    {
+      "text": "i first didnt understand the hype around this product when i tried it at the store but i decided to give it another chance and i really enjoy it now. you get a lot of product for the price and has an amazing sweet vanilla smell",
+      "gold": "product_details",
+      "predicted": "results_based"
+    },
+    {
+      "text": "I really wanted to love this, but I ended up just liking it. It does hydrate, but it\u2019s not the absolute best out there. I would recommend the berry flavor, as opposed to the vanilla flavor. The vanilla just tastes odd.",
+      "gold": "general_opinion",
+      "predicted": "results_based"
+    },
+    {
+      "text": "It is so moisturizing and keeps my lips super soft and hydrated.",
+      "gold": "results_based",
+      "predicted": "results_based"
+    },
+    {
+      "text": "I have very sensitive skin and this lip mask is so perfect and soothing. It has taken me almost a year to get through 3/4 of it. It stays on my lips all night too!",
+      "gold": "results_based",
+      "predicted": "results_based"
+    },
+    {
+      "text": "This product is pretty good, and it moisturizes my lips well. My only issue is the taste and smell is kind of artificial. Great product though!",
+      "gold": "product_details",
+      "predicted": "results_based"
+    }
+  ]
+}
