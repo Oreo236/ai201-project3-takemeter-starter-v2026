@@ -116,9 +116,9 @@ detail is given.
 by the student. Verify the collection source before submission.
 
 **How I labelled them:** The student supplied labels for rows 1–20. Rows
-21–200 were pre-labelled with AI and have not yet been reviewed or corrected
-by the student. The first 20 are not marked as cold because unaided labeling
-was not confirmed.
+21–200 were pre-labelled with AI and then reviewed and confirmed by the
+student. The first 20 are not marked as cold because unaided labeling was not
+confirmed.
 
 **Counts per label:**
 
@@ -186,20 +186,27 @@ of next unit's variance. -->
 
 **Moment 1**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Help labeling the 200 collected beauty reviews using
+  `results_based`, `product_details`, and `general_opinion`.
+- *What came back:* AI-generated labels for all 200 posts.
+- *What I changed:* I reviewed the labels and confirmed they looked good. The
+  first 20 labels were supplied separately by me; their cold-label status is
+  unverified.
 
 **Moment 2**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Help preparing the project taxonomy and acceptance
+  criteria so I could move on to other coursework.
+- *What came back:* AI-drafted taxonomy wording and measurable acceptance
+  criteria with rationales based on the dataset's label distribution.
+- *What I changed:* The taxonomy and criteria are recorded as AI-assisted.
+  The criteria remain an AI-drafted proposal, not independently
+  student-authored targets.
 
 **Pre-labelling disclosure:**
-Rows 21–200 in `labels.csv` were pre-labelled by AI and still need to be
-checked and corrected by the student. Rows 1–20 have labels supplied by the
-student; their cold-label status is unverified.
+Rows 21–200 in `labels.csv` were pre-labelled by AI and then reviewed and
+confirmed by the student. Rows 1–20 have labels supplied by the student;
+their cold-label status is unverified.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 

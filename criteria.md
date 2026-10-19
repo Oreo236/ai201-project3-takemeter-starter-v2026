@@ -53,59 +53,55 @@ whether you hit them:
 
 ## 1.
 
-<!-- Your criterion. It must name a number. -->
+The model reaches at least **0.70 accuracy on each of the three seeded test
+splits**.
 
-
-
-**Why this target:**
-
-
+**Why this target:** The largest label already accounts for 68% of the 200
+reviews, so accuracy should beat a classifier that mostly predicts that label.
 
 ---
 
 ## 2.
 
-<!-- Your criterion. -->
+The model reaches at least **0.55 macro F1 on each of the three seeded test
+splits**.
 
-
-
-**Why this target:**
-
-
+**Why this target:** Macro F1 gives each of the three categories equal weight,
+so strong results on the 68% `results_based` class cannot hide weak performance
+on the smaller categories.
 
 ---
 
 ## 3.
 
-<!-- Your criterion. -->
+Every label has an F1 score of at least **0.25 on each of the three seeded
+test splits**.
 
-
-
-**Why this target:**
-
-
+**Why this target:** A minimum for every label makes failures visible. The
+`general_opinion` class has only 20 examples, so its held-out score will be
+especially variable; this deliberately modest floor reflects that limitation.
 
 ---
 
 ## 4.
 
-<!-- Your criterion. -->
+The dataset contains at least **200 labeled posts**, and no label makes up
+more than **70%** of the dataset.
 
-
-
-**Why this target:**
-
-
+**Why this target:** The project requires 200 examples and caps any one label
+at 70% to reduce the risk that the classifier can succeed by guessing the
+majority class. The current `results_based` share is 68%.
 
 ---
 
 ## 5.
 
-<!-- Your criterion. -->
+The range between the highest and lowest test accuracy across the three seeds
+is no more than **0.10**.
 
-
-
-**Why this target:**
+**Why this target:** Different train/test splits can change results. A maximum
+10-percentage-point spread is a simple check that the overall score is not
+dependent on one unusually favorable split.
 
 
 
