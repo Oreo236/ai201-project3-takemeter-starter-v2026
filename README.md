@@ -161,17 +161,25 @@ confirmed.
 
 <!-- Your starting model, your settings, and anything you changed and why. -->
 
-**Base model:**
+**Base model:** `distilbert-base-uncased`
 
-**Settings:** <!-- epochs, learning rate, batch size, seed -->
+**Settings:** 3 epochs, learning rate `2e-5`, batch size 16, seed 42,
+maximum sequence length 128.
 
-**Anything I changed from the defaults, and why:**
+**Anything I changed from the defaults, and why:** No hyperparameters changed.
+Training ran on the Apple Silicon GPU (MPS) with PyTorch 2.14.1.
 
-**Split sizes:** <!-- train / val / test, and per-label counts in the test
-split. If a label had fewer than about 8 in test, say so — it explains a lot
-of next unit's variance. -->
+**Split sizes:** 139 train / 31 validation / 30 test. Test counts: 20
+`results_based`, 7 `product_details`, and 3 `general_opinion`. The two smaller
+test classes have fewer than 8 examples, so their scores are highly unstable.
 
-
+**Seed 42 results:** Accuracy 0.667; macro F1 0.267. F1 by label:
+`results_based` 0.800, `product_details` 0.000, `general_opinion` 0.000. The
+model predicted every held-out post as `results_based`; its accuracy is close
+to that class's 68% share in the full dataset and does not indicate useful
+performance across all three labels. These are one-seed results, not the
+three-seed evaluation required in unit 6. See [`results.json`](results.json)
+and [`test_split.csv`](test_split.csv) for the saved run and held-out posts.
 
 ---
 
