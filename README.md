@@ -262,29 +262,29 @@ and scores.
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Overall accuracy | ≥ 0.70 | 0.667 | 0.667 | 0.667 | MISSED |
+| 2. Macro F1 | ≥ 0.55 | 0.267 | 0.267 | 0.267 | MISSED |
+| 3. Every label F1 (`results_based` / `product_details` / `general_opinion`) | ≥ 0.25 each | 0.800 / 0 / 0 | 0.800 / 0 / 0 | 0.800 / 0 / 0 | MISSED |
+| 4. Dataset size and balance | 200 rows; max label ≤ 70% | 200; 68% | 200; 68% | 200; 68% | MET |
+| 5. Accuracy spread | ≤ 0.10 | 0.000 | 0.000 | 0.000 | MET |
 
 ### Confusion matrix
 
 <!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
      An image of a matrix earns nothing. -->
 
-| true \ predicted |  |  |  |
+| true \ predicted | results_based | product_details | general_opinion |
 |---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+| **results_based** | 20 | 0 | 0 |
+| **product_details** | 7 | 0 | 0 |
+| **general_opinion** | 3 | 0 | 0 |
 
 **My biggest off-diagonal number, and what it means:**
-<!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
-     direction. "7 real analysis posts were called hot_take and only 3 went the
-     other way" is a direction, not just an error rate. -->
-
-
+Seven true `product_details` posts were predicted as `results_based`, while no
+true `results_based` posts went the other way. The model predicted every test
+post as `results_based` on all three seeds, so the identical scores do not mean
+it learned all three categories; they show a stable majority-class prediction.
+The baseline made the same predictions on this split.
 
 ---
 
